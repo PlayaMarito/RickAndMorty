@@ -1,0 +1,27 @@
+<p>Aquí comienza "hola works!"</p>
+
+<div>
+    <input type= "text" placeholder="Ingrese un nombre" [(ngModel)]="nombre">
+    <input type = "text" placeholder = "ingrese un apellido" [(ngModel)]="apellido"> 
+</div>
+
+<h3>
+    {{nombre}}
+    {{apellido}}
+</h3>
+
+<h1 *ngIf = "nombre=== 'Carlos'">
+    {{nombre}}
+</h1>
+@if(nombre === 'Diego') {
+    <h1>
+        {{nombre}}
+    </h1>
+}
+<ul>
+    @for (n of nombres; track $index){
+    <li>
+        {{n}}
+    </li>
+}
+</ul>
